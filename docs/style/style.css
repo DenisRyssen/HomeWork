@@ -1,0 +1,329 @@
+body{
+    background: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    color:#1E1B1B;
+    line-height: 160%;
+    font-weight: 400;
+    /*overflow-x: hidden;*/
+  }
+  .container {
+    
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1310px;
+  }
+  .header__nav{
+      padding-top: 40px;
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      align-items: center;    
+      margin-bottom: 150px;  
+  }
+  
+  .header__logo{
+  
+  padding-right: 435px;
+  }
+  
+  .menu__link{
+      display: inline-block;
+      color:#1E1B1B;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.3s linear;
+      line-height: 1.6;
+      padding-right: 30px;
+       
+  }
+  
+  .menu__link:hover{
+      color: red;
+  }
+  
+  .header__phone{
+    display: flex;
+    gap: 14px;
+  }
+  .phone__img{
+      height: 40px;
+      padding-left: 34px;
+  
+  }
+  
+  .phone__img:hover {
+      animation: 1.5s ease-in-out 0s normal none infinite running trambling-animation;
+  }
+  @keyframes trambling-animation {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+  .phone{
+      padding-left: 50px;
+  }
+      
+  .phone__content p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      opacity: 0.7;
+  }
+  
+  .phone__link{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #1E1B1B;
+  
+  
+  }
+  
+  
+  
+  
+  /*======================================service====================*/
+  .service{
+  margin-bottom: 135px;
+  }
+  
+  
+  .service__content{
+  
+    display: flex;
+    gap: 21px;
+    margin-bottom: 32px;
+  }
+  
+  .service__title{
+      margin-bottom: 32px;
+      width: auto;    
+  }
+  
+  .service__title h1{
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 84px;
+      text-align: left;
+  }
+  
+  .service__btn{
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 20px;
+  
+  }
+  
+  .button{
+      
+  }
+  .btn__link{
+      display:inline-block;
+      width: 203px;
+      padding: 16px 40px;
+      background-color: #FF6433;
+      transition: all .5s;
+      border-radius: 12px;
+      transition:  all .5s;
+      text-align: center;
+      font-size: 18px;
+      line-height: 31px;
+      color: #FFFFFF;
+  }
+  
+  .btn__link:hover{
+    
+    background-color: #f34906;
+  }
+  
+  .btn__play {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .btn__play svg {
+    margin-right: 16px;
+    border-radius: 50%;
+    transition: all .3s;
+  }
+  
+  .btn__play:hover svg {
+    box-shadow: 0 0 0 16px rgba(255, 63, 58, 0.12);
+  }
+  
+  .play__text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;   
+  }
+  
+  
+  
+    /*Первое фото наложено сверху всех*/
+    .service_quick{
+      
+    }
+    .service__mechanic-img{
+      position: absolute;
+      z-index: 0;
+      top: 162px;
+      left: 667px;
+      width: 605px;
+      height: 632px;
+      }
+    
+    .service__quick{
+      position: relative;
+      z-index: 1;
+      top: -20px;
+      left: 4px;
+      width: 326px;
+      height: 102px;
+      background: #FFFFFF;
+      border: 12px solid  #FFFFFF;
+      border-radius: 59px;
+      opacity: .98;
+      transition: all 0.5s ease-out;
+    }
+    .service__quick:hover{
+  
+      border: 12px solid rgb(225, 225, 225, 0.43);
+      box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
+      
+    }
+  
+    .quick__pey{
+      
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        padding-top: 17px;
+        padding-left: 8px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        color: #FFFFFF;
+        background: #5CBA99;
+        position: relative;
+        bottom: 87px;
+        left: 10px;
+    }
+  
+    .quick__title {
+      padding-top: 20px;
+      padding-bottom: 36px;
+      padding-right: 40px;
+  }
+  .quick__title p{
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      text-align: right;
+  }
+  .quick__pey p{
+     font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      text-align: right;
+  }
+  /*====================================service__rating============================*/
+      .service__rating {
+        position: relative;
+        z-index: 1;
+        top: 240px;
+        left: 355px;
+        width: 326px;
+        height: 102px;
+        background: #FFFFFF;
+        border: 12px solid #FFFFFF;
+        border-radius: 59px;
+        opacity: .98;
+        transition: all 0.5s ease-out;
+    }
+  
+    .service__rating:hover{
+      
+      border: 12px solid rgb(225, 225, 225, 0.43);
+      box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
+  
+      }
+  
+      
+  
+      
+  
+      .block__text{
+        padding-top: 24px;
+        padding-left: 38px;
+      }
+   .block__title{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  
+    }
+  .block__subtitle{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  opacity: 70%;
+  }
+  
+  .service__rating-body {
+    position: relative;
+    bottom: 45px;
+  }
+    
+  
+  .half-stars {
+    text-align: center;
+  }
+  .half-stars .rating-group {
+    display: inline-flex;
+  }
+  .half-stars input {
+    position: absolute;
+    left: -9999px;
+  }
+  .half-stars label {
+    margin: 0;
+    cursor: pointer;
+  }
+  .half-stars label svg {
+    margin: 2px;
+    height: 20px;
+    width: 20px;
+    fill:gold;
+    transition: fill 0.3s;
+  }
+  .half-stars .hsr {
+    padding-right: 0;
+    margin-right: -22px;
+    width: 22px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .half-stars input:checked ~ label svg {
+    fill: #BFE2FF;
+  }
+  .half-stars .rating-group:hover label svg {
+    fill: gold;
+  }
+  .half-stars .rating-group input:hover ~ label svg {
+    fill: #eeffbf;
+  }
+  
